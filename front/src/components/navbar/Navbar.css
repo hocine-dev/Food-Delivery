@@ -1,0 +1,77 @@
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar-menu li {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #333333;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 20px;
+  }
+  
+  .navbar-menu li:hover {
+    color: #ff6347; /* Tomato color on hover */
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right img {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .navbar-search-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar-search-icon .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: 15px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #e5533d;
+  }
+
+  .active{padding-bottom: 2px; border-bottom: 2px solid #49557e;}
+  
