@@ -18,6 +18,7 @@
     background-color: rgba(0, 0, 0, 0.5); /* Slightly darken the background for readability */
     padding: 20px;
     border-radius: 10px;
+    animation: fadeIn 2s;
   }
   
   .header h2 {
