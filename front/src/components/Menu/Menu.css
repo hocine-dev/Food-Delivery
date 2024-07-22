@@ -53,4 +53,9 @@
     color: #333;
     text-transform: capitalize;
   }
-  
+
+  .menu-active{
+    border: 4px solid tomato;
+    padding: 2px;
+    border-radius: 50%;
+  }
