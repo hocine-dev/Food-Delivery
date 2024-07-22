@@ -1,0 +1,50 @@
+/* Header.css */
+
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url("/header_img.png") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .header-content {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly darken the background for readability */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .header h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .header button {
+    padding: 15px 30px;
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+  
+  .header button:hover {
+    background-color: #e5533d;
+  }
+  
