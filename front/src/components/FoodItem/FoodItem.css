@@ -55,3 +55,44 @@
     font-weight: bold;
   }
   
+  /* Add item button */
+.add-item {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.add-item:hover {
+  transform: scale(1.1);
+}
+
+/* Counter container */
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translate(-70%, -150%);
+}
+
+.counter img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.counter img:hover {
+  transform: scale(1.1);
+}
+
+.counter p {
+  margin: 0 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}

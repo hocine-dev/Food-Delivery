@@ -1,46 +1,48 @@
-import { createContext, useState } from "react";
+import { createContext, useState ,useEffect} from "react";
 import { food_list } from "../assets/assets"
 
 
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
-  const [state, setState] = useState({
-    // Initial state values
-    menuItems: [],
-    cart: [],
-    user: null,
-  });
+  
 
-  // Function to add item to cart
-  const addToCart = (item) => {
-    setState((prevState) => ({
-      ...prevState,
-      cart: [...prevState.cart, item],
-    }));
+  const [CartItems, setCartItems] = useState({});
+
+  const addToCart = (itemId) => {
+    setCartItems((prev) => {
+      const updatedCart = { ...prev };
+      if (!updatedCart[itemId]) {
+        updatedCart[itemId] = 1;
+      } else {
+        updatedCart[itemId] += 1;
+      }
+      return updatedCart;
+    });
   };
 
-  // Function to remove item from cart
   const removeFromCart = (itemId) => {
-    setState((prevState) => ({
-      ...prevState,
-      cart: prevState.cart.filter((item) => item.id !== itemId),
-    }));
+    setCartItems((prev) => {
+      const updatedCart = { ...prev };
+      if (updatedCart[itemId] > 1) {
+        updatedCart[itemId] -= 1;
+      } else {
+        delete updatedCart[itemId];
+      }
+      return updatedCart;
+    });
   };
 
-  // Function to update user information
-  const updateUser = (userInfo) => {
-    setState((prevState) => ({
-      ...prevState,
-      user: userInfo,
-    }));
-  };
+
+ useEffect(() => {
+  console.log(CartItems)
+ }, [CartItems])
+ 
 
   const contextValue = {
-    state,
+    CartItems,
     addToCart,
     removeFromCart,
-    updateUser,
     food_list,
   };
 
