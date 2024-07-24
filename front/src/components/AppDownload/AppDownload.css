@@ -1,0 +1,28 @@
+.AppDownload {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .AppDownload p {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .platforms {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .platforms img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .platforms img:hover {
+    opacity: 0.8;
+  }
+  
