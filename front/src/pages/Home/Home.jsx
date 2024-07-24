@@ -5,7 +5,7 @@ import "./Home.css"
 import { useState } from "react"
 const Home = () => {
 
-  const [Category, setCategory] = useState("all")
+  const [Category, setCategory] = useState("All")
   return (
     <div>
       <Header/>
