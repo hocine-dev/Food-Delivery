@@ -14,7 +14,7 @@ const Food = ({ Category }) => {
           return (
             <FoodItem
               key={index}
-              id={item.id}
+              id={item._id}
               name={item.name}
               desc={item.description}
               price={item.price}
